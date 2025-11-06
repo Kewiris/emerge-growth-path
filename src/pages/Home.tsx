@@ -12,6 +12,8 @@ import heroImage from "@/assets/hero-collaboration.jpg";
 import carouselLeadership from "@/assets/carousel-leadership.jpg";
 import carouselTeambuilding from "@/assets/carousel-teambuilding.jpg";
 import carouselStrategy from "@/assets/carousel-strategy.jpg";
+import carouselWorkshop from "@/assets/carousel-workshop.jpg";
+import carouselPlanning from "@/assets/carousel-planning.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -21,6 +23,8 @@ const Home = () => {
     { src: carouselLeadership, alt: "Leadership Training" },
     { src: carouselTeambuilding, alt: "Team Building" },
     { src: carouselStrategy, alt: "Strategy Workshop" },
+    { src: carouselWorkshop, alt: "Professional Workshop" },
+    { src: carouselPlanning, alt: "Strategic Planning Session" },
   ];
 
   return (
