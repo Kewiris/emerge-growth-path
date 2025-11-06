@@ -41,7 +41,7 @@ const Home = () => {
           </div>
           
           <div className="relative container mx-auto px-6 text-center text-navy-foreground z-10">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Enabling People to Work
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">Enabling People to Work 
 Together Better<br />
               <span className="text-primary">Together Worse</span>
             </h1>
