@@ -21,11 +21,11 @@ const Home = () => {
   const navigate = useNavigate();
   
   const carouselImages = [
-    { src: carouselLeadership, alt: "Leadership Training" },
-    { src: carouselTeambuilding, alt: "Team Building" },
-    { src: carouselStrategy, alt: "Strategy Workshop" },
-    { src: carouselWorkshop, alt: "Professional Workshop" },
-    { src: carouselPlanning, alt: "Strategic Planning Session" },
+    { src: carouselLeadership, alt: "E-merge Facilitator Leading Workshop" },
+    { src: carouselWorkshop, alt: "Interactive Workshop Activity" },
+    { src: carouselTeambuilding, alt: "Team Collaboration Session" },
+    { src: carouselStrategy, alt: "Strategic Facilitation" },
+    { src: carouselPlanning, alt: "Leadership Training Session" },
   ];
 
   return (
