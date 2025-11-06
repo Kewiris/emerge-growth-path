@@ -15,6 +15,7 @@ import carouselStrategy from "@/assets/carousel-strategy.jpg";
 import carouselWorkshop from "@/assets/carousel-workshop.jpg";
 import carouselPlanning from "@/assets/carousel-planning.jpg";
 import { useNavigate } from "react-router-dom";
+import Autoplay from "embla-carousel-autoplay";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -81,7 +82,18 @@ const Home = () => {
             <h2 className="text-3xl font-bold text-center mb-12">
               Our Work in <span className="text-primary">Action</span>
             </h2>
-            <Carousel className="w-full max-w-5xl mx-auto">
+            <Carousel 
+              className="w-full max-w-5xl mx-auto"
+              plugins={[
+                Autoplay({
+                  delay: 4000,
+                  stopOnInteraction: true,
+                })
+              ]}
+              opts={{
+                loop: true,
+              }}
+            >
               <CarouselContent>
                 {carouselImages.map((image, index) => (
                   <CarouselItem key={index}>
