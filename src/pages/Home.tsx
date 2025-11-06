@@ -41,8 +41,8 @@ const Home = () => {
           </div>
           
           <div className="relative container mx-auto px-6 text-center text-navy-foreground z-10">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Enabling People to Work<br />
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">Enabling People to Work
+Together Better<br />
               <span className="text-primary">Together Worse</span>
             </h1>
             <p className="text-xl mb-8 text-navy-foreground/90 max-w-2xl mx-auto">
