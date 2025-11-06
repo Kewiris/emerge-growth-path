@@ -1,13 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import heroImage from "@/assets/hero-collaboration.jpg";
 import carouselLeadership from "@/assets/carousel-leadership.jpg";
 import carouselTeambuilding from "@/assets/carousel-teambuilding.jpg";
@@ -16,29 +10,33 @@ import carouselWorkshop from "@/assets/carousel-workshop.jpg";
 import carouselPlanning from "@/assets/carousel-planning.jpg";
 import { useNavigate } from "react-router-dom";
 import Autoplay from "embla-carousel-autoplay";
-
 const Home = () => {
   const navigate = useNavigate();
-  
-  const carouselImages = [
-    { src: carouselLeadership, alt: "E-merge Facilitator Leading Workshop" },
-    { src: carouselWorkshop, alt: "Interactive Workshop Activity" },
-    { src: carouselTeambuilding, alt: "Team Collaboration Session" },
-    { src: carouselStrategy, alt: "Strategic Facilitation" },
-    { src: carouselPlanning, alt: "Leadership Training Session" },
-  ];
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  const carouselImages = [{
+    src: carouselLeadership,
+    alt: "E-merge Facilitator Leading Workshop"
+  }, {
+    src: carouselWorkshop,
+    alt: "Interactive Workshop Activity"
+  }, {
+    src: carouselTeambuilding,
+    alt: "Team Collaboration Session"
+  }, {
+    src: carouselStrategy,
+    alt: "Strategic Facilitation"
+  }, {
+    src: carouselPlanning,
+    alt: "Leadership Training Session"
+  }];
+  return <div className="min-h-screen flex flex-col">
       <Header />
       
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
-          <div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${heroImage})` }}
-          >
+          <div className="absolute inset-0 bg-cover bg-center" style={{
+          backgroundImage: `url(${heroImage})`
+        }}>
             <div className="absolute inset-0 bg-gradient-to-r from-navy/90 to-navy/70"></div>
           </div>
           
@@ -47,9 +45,7 @@ const Home = () => {
               Enabling People to Work<br />
               <span className="text-primary">Together Better</span>
             </h1>
-            <p className="text-xl mb-8 text-navy-foreground/90 max-w-2xl mx-auto">
-              E-merge is passionate about "How people work", and is dedicated to enabling people to work together better.
-            </p>
+            <p className="text-xl mb-8 text-navy-foreground/90 max-w-2xl mx-auto">E-merge is passionate about "How people work", and is dedicated to enabling people to work together with carrots.</p>
             <Button size="lg" onClick={() => navigate('/about')}>
               Learn More About Us
             </Button>
@@ -82,30 +78,18 @@ const Home = () => {
             <h2 className="text-3xl font-bold text-center mb-12">
               Our Work in <span className="text-primary">Action</span>
             </h2>
-            <Carousel 
-              className="w-full max-w-5xl mx-auto"
-              plugins={[
-                Autoplay({
-                  delay: 4000,
-                  stopOnInteraction: true,
-                })
-              ]}
-              opts={{
-                loop: true,
-              }}
-            >
+            <Carousel className="w-full max-w-5xl mx-auto" plugins={[Autoplay({
+            delay: 4000,
+            stopOnInteraction: true
+          })]} opts={{
+            loop: true
+          }}>
               <CarouselContent>
-                {carouselImages.map((image, index) => (
-                  <CarouselItem key={index}>
+                {carouselImages.map((image, index) => <CarouselItem key={index}>
                     <div className="aspect-video rounded-lg overflow-hidden">
-                      <img
-                        src={image.src}
-                        alt={image.alt}
-                        className="w-full h-full object-cover"
-                      />
+                      <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
                     </div>
-                  </CarouselItem>
-                ))}
+                  </CarouselItem>)}
               </CarouselContent>
               <CarouselPrevious />
               <CarouselNext />
@@ -115,8 +99,6 @@ const Home = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
