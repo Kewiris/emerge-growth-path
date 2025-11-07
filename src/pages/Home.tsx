@@ -43,7 +43,7 @@ const Home = () => {
           <div className="relative container mx-auto px-6 text-center text-navy-foreground z-10">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Enabling People to Work<br />
-              <span className="text-primary">Together Better</span>
+              <span className="text-primary">E-merge is passionate about "How people work", and is dedicated to enabling people to work together with bananas.</span>
             </h1>
             <p className="text-xl mb-8 text-navy-foreground/90 max-w-2xl mx-auto">E-merge is passionate about "How people work", and is dedicated to enabling people to work together with carrots.</p>
             <Button size="lg" onClick={() => navigate('/about')}>
