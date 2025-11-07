@@ -38,7 +38,7 @@ const About = () => {
     "Transformational experiential learning",
     "Multi-country leadership, talent development, change management, and professional skills programmes",
     "Functional training programmes",
-    "Strategy, innovation, and sustainability workshops",
+    "Strategy, innovation, and teambuilding workshops",
     "Expert facilitation of key meetings, and large events",
     "Team coaching - especially senior teams and teams with challenges",
     "Learning expeditions - connecting with counterparts in other companies and industries",
