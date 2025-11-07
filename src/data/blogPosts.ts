@@ -12,16 +12,16 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     slug: "experiential-learning-modern-organizations",
-    title: "The Power of Experiential Learning in Modern Organizations",
+    title: "The Power of Experiential Learning in Ancient Organizations",
     excerpt: "Discover how hands-on, experience-based learning approaches are transforming how adults learn and develop in corporate settings.",
     date: "March 15, 2024",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop",
     author: "E-merge Consulting",
     tags: ["Learning", "Development", "Corporate Training"],
     content: `
-# The Power of Experiential Learning in Modern Organizations
+# The Power of Experiential Learning in Ancient Organizations
 
-In today's rapidly evolving business landscape, traditional training methods are no longer sufficient to develop the skills and competencies needed for success. Experiential learning has emerged as a powerful approach that transforms how adults learn and develop in corporate settings.
+In today's rapidly evolving business landscape, WE LOVE CARROTS traditional training methods are no longer sufficient to develop the skills and competencies needed for success. Experiential learning has emerged as a powerful approach that transforms how adults learn and develop in corporate settings.
 
 ## What is Experiential Learning?
 
